@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en"><!-- Basic -->
+<head>
+
+     <script src="js/jquery-3.5.0.min.js"></script> 
+    <script> 
+    
+    $(document).ready(function(){
+    	 var username =localStorage.getItem("username");
+    	 localStorage.setItem('activeTab',"");
+    	 localStorage.setItem('prevactiveTab',"");
+         document.getElementById("username").innerHTML = username;
+     
+    	  });
+    
+    
+    
+    $(function(){
+      $("#includedContent").load("profileheader.html"); 
+    });
+    </script> 
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+     <!-- Site Metas -->
+    <title>Simha Birthday</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="divya bhavi">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/iconpage.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/icontouch.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="css/pogo-slider.min.css">
+	<!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">    
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+
+	<!-- LOADER -->
+    <div id="preloader">
+		<div class="preloader pulse">
+			<h3>The Simha-Sharath</h3>
+		</div>
+    </div><!-- end loader -->
+    <!-- END LOADER -->
+	
+	<div id="includedContent"></div>
+	
+	
+	<!-- Start About us -->
+	<div id="about" class="about-box">
+		<div class="about-a1">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<div class="title-box" style="text-align: -webkit-auto;">
+							<h2>Hi <span id="username">  </span></h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						
+						<div class="row align-items-center about-main-info">
+							<div class="col-lg-4 col-md-6 col-sm-12">
+								<div class="about-m">
+									<div class="about-img">
+										<img class="img-fluid" src="images/about-img-02.jpg" alt="" />
+									</div>
+									
+								</div>
+							</div>
+							<div class="col-lg-8 col-md-6 col-sm-12">
+								<h2> <i class="fa fa-heart-o" aria-hidden="true"></i> <span>I need your help</span> <i class="fa fa-heart-o" aria-hidden="true"></i></h2>
+								<p>As you know sharath's birthday is coming and it's not safe to meet and celebrate ,I'm trying to make his birthday special for him
+								   I have created this website , please send a birthday wish to him , you can go to 'upload tab' to send him a wish 
+								   Do comment or Like his photo in Stories tab :) </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End About us -->
+	
+	<!-- Start Footer -->
+	<footer class="footer-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="footer-company-name">All Rights Reserved. &copy; Divya Bhavi</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+	<!-- ALL JS FILES -->
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.pogo-slider.min.js"></script> 
+	<script src="js/slider-index.js"></script>
+	<script src="js/smoothscroll.js"></script>
+	<script src="js/responsiveslides.min.js"></script>
+    <script src="js/timeLine.min.js"></script>	
+	<script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+    .pb-cmnt-container {
+        font-family: Lato;
+        margin-top: 100px;
+    }
+
+    .pb-cmnt-textarea {
+        resize: none;
+        padding: 20px;
+        height: 130px;
+        width: 100%;
+        border: 1px solid #F2F2F2;
+    }
+   
+
+
+</style>
+    <meta charset="utf-8" />
+    <title>upload</title>
+   
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+
+   
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+     <script src="js/jquery-3.5.0.min.js"></script> 
+    <script> 
+  
+    
+    $(function(){
+      $("#includedContent").load("header.html"); 
+    });
+    </script> 
+</head>
+<body>
+<div id="includedContent"></div>
+
+	
+<div class="about-box">
+<div class="container">
+
+<div hidden="true" id="videoholder">
+ <video controls muted="muted"></video>
+  <button class="btn" id="startVideo"><img src="images/start_1.png" style="max-height: 27px"/></button>
+ <button class="btn" id="stop"><img src="images/stop_1.png" style="max-height: 27px"/></button>
+</div>
+
+<!-- Comment Box - START -->
+<div class="container pb-cmnt-container" id="details">
+<label id="message" style="color: red;padding-left: 400px;font-weight: bolder;font-size:large;" class="blinking"></label>	  
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="panel panel-info">
+                <div class="panel-body">
+                    <textarea id="wishtext" placeholder="You write down your precious words here for his birthday!" class="pb-cmnt-textarea"></textarea>
+                    <form class="form-inline">
+                        <div class="btn-group">
+                           
+                            <input type="file" id="datafile" style="display:none"/>
+                           <button class="btn" id="uploadfile" type="button"><span class="fa fa-picture-o fa-lg"></span></button>
+                             <button class="btn" id="start" type="button"><span class="fa fa-video-camera fa-lg"></span></button>
+                              <button class="btn" id="save" type="button"><span >Save</span></button>
+                           
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
+
+<div id="videoshow" class="family-box" hidden="true">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="title-box">
+						<h2>Thank you...!</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="single-team-member">
+						<div class="family-img">
+							<video id="vid2" style="width: 330px;height: 270px;" controls></video>
+						</div>
+						
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+	</div>
+
+<footer class="footer-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="footer-company-name">All Rights Reserved. &copy; Divya Bhavi</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+<!-- Comment Box - END -->
+<script type="text/javascript" src="js/uploadjs.js" charset="utf-8"></script>
+
+</body>
+</html>
