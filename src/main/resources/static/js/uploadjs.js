@@ -61,6 +61,7 @@ let constraintObj = {
             let chunks = [];
             
             start.addEventListener('click', (ev)=>{
+            	 document.getElementById("message").innerHTML="";
             	document.getElementById("videoholder").hidden = false;
             	document.getElementById("details").hidden = true;
                // mediaRecorder.start();
@@ -190,6 +191,7 @@ let constraintObj = {
   	            processData: false,
       	        success : function (data, status) {
       		         console.log("Saved successfully!!");
+      		       document.getElementById("message").innerHTML="Thank you for the wishes!!"
       		    
       		     },
       		     error : function (status) {

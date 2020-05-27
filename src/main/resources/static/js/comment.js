@@ -2,9 +2,21 @@
 var commentData=[];
 var test=[];
 var total=[];
+var count=0;
+var Caches=[];
+var cache = {
+	    // Initialise le film
+	    init: function (imageid, comment,username) {
+	        this.imageid = imageid;
+	        this.comment = comment;
+	        this.username=username;
+	    }
+	};
+var click=0;
 
 function addComment(id,imageid,name)
 {
+	click++;
 	var activeimg = document.getElementById(imageid).src;
 	// Get the modal
 	var modal = document.getElementById("myModal");
@@ -16,20 +28,34 @@ function addComment(id,imageid,name)
 	var span = document.getElementsByClassName("close")[0];
 
 	// When the user clicks on the button, open the modal 
+	if(click==1){
 	btn.onclick = function() {
 	
 	  modal.style.display = "block";
 	  document.getElementById("activeimage").src=activeimg;
+	
 	  test.forEach(function (item) {
-		
+		 
 		  if(item.imageid==name)
-		{
+		{	  
 			var oldmsg=$('#dynamiccontent').html();
 		  $('#dynamiccontent').html(oldmsg+'<p>'+'<b>'+item.username+'</b>'+': '+item.comment+'</p>');
 		}
 			  
  	 });
-	  
+	 Caches.forEach(function (item) {
+			
+			  if(item.imageid==name)
+				{
+				 
+					var oldmsg=$('#dynamiccontent').html();
+					 $('#dynamiccontent').html("");
+				  $('#dynamiccontent').html(oldmsg+'<p>'+'<b>'+item.username+'</b>'+': '+item.comment+'</p>');
+				}
+				  
+	 	
+  });
+	
 	  total.forEach(function (item) {
 			
 		  if(item.imageid==name)
@@ -39,7 +65,10 @@ function addComment(id,imageid,name)
 			  
  	 });
 	  
+	  
+	  
 	}
+}
 
 	// When the user clicks on <span> (x), close the modal
 	span.onclick = function() {
@@ -47,10 +76,12 @@ function addComment(id,imageid,name)
 		if(commentData.length>0)
 		{
 		savealldata(name);
+		count=1;
 		commentData=[];
 		}
 	 $('#dynamiccontent').html("");
 	  modal.style.display = "none";
+	  click=0;
 	}
 	
 	// When the user clicks anywhere outside of the modal, close it
@@ -112,7 +143,14 @@ function savealldata(imageid)
 	    CommentSave.imageid=imageid;
 	    CommentSave.username=username;
 	    CommentSave.comments=commentData;
-	   
+
+	    commentData.forEach(function (item) {
+			
+	    	var newdata = Object.create(cache);
+	 	    newdata.init(imageid,item,username);
+	 	    Caches.push(newdata);  
+	 	 });
+	  
 	  
 	 $.ajax({
 		   headers: { 

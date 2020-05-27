@@ -9,17 +9,12 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    
 </style>
-    <meta charset="utf-8" />
+   
     <title>Story</title>
    
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
-   
-    <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
- 
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
      <!-- Site Metas -->
     <title>Simha Birthday</title>  
     <meta name="keywords" content="">
@@ -88,7 +83,7 @@
 </div>
 <div class="containerComment">
   <textarea id="newcomment" rows="" cols="" style="width: 100%;" placeholder="Write Comment.."></textarea>
-  	<button  id="savecomment" onclick="saveComment()" type="button" style=" border: none;"><i class="fa fa-sign-in" aria-hidden="true"></i></button> 
+  	<button  id="savecomment" onclick="saveComment()" type="button" style=" border: none;cursor:pointer"><i class="fa fa-sign-in" aria-hidden="true"></i></button> 
 </div>
   </div>
      
@@ -107,8 +102,8 @@
 							<img class="img-fluid" id="i1" src="images/sharath/8.jpg" alt="" />
 						
 							</a>
-							<button name="1" id="1" onclick="increaseLike(this.name)" type="button" style=" border: none;"><span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span></button>
-        					<button name="1" id="c1" onclick="addComment(this.id,'i1',this.name)" type="button" style=" border: none;"><i class="fa fa-comment"></i></button> 
+							<button name="1" id="1" onclick="increaseLike(this.name)" type="button" style=" border: none;cursor:pointer"><span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span></button>
+        					<button name="1" id="c1" onclick="addComment(this.id,'i1',this.name)" type="button" style=" border: none;cursor:pointer"><i class="fa fa-comment"></i></button> 
      
 							
 						</div>
@@ -124,8 +119,8 @@
 						   <a href="images/sharath/1_n.jpg">
 							<img class="img-fluid" id="i2" src="images/sharath/1_n.jpg" alt=""/>
 							</a>
-						<button name="2" id="2" onclick="increaseLike(this.name)" type="button" style=" border: none;color: ''"><span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span></button>
-        					<button name="2" id="c2" onclick="addComment(this.id,'i2',this.name)" type="button" style=" border: none;"><i class="fa fa-comment"></i></button> 
+						<button name="2" id="2" onclick="increaseLike(this.name)" type="button" style=" cursor:pointer;border: none;color: ''"><span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span></button>
+        					<button name="2" id="c2" onclick="addComment(this.id,'i2',this.name)" type="button" style=" border: none;cursor:pointer"><i class="fa fa-comment"></i></button> 
 						</div>
 					</div>
 				</div>
@@ -135,8 +130,8 @@
 						   <a href="images/sharath/5.jpg">
 							<img class="img-fluid" src="images/sharath/5.jpg" alt="" id="i3"/>
 						</a>
-						<button name="3" id="3" onclick="increaseLike(this.name)" type="button" style=" border: none;color:'';"><span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span></button>
-        					<button name="3" id="c3" onclick="addComment(this.id,'i3',this.name)" type="button" style=" border: none;"><i class="fa fa-comment"></i></button> 
+						<button name="3" id="3" onclick="increaseLike(this.name)" type="button" style="cursor:pointer;border: none;color:'';"><span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span></button>
+        					<button name="3" id="c3" onclick="addComment(this.id,'i3',this.name)" type="button" style=" border: none;cursor:pointer"><i class="fa fa-comment"></i></button> 
 						
 					</div>
 				</div>
@@ -148,8 +143,8 @@
 						   <a href="images/sharath/3.jpg">
 							<img class="img-fluid" src="images/sharath/3.jpg" alt="" id="i4"/>
 							</a>
-						<button name="4" id="4"  onclick="increaseLike(this.name)" type="button" style=" border: none;"><span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span></button>
-        					<button name="4" id="c4"  onclick="addComment(this.id,'i4',this.name)" type="button" style=" border: none;"><i class="fa fa-comment"></i></button> 
+						<button name="4" id="4"  onclick="increaseLike(this.name)" type="button" style=" border: none;cursor:pointer"><span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span></button>
+        					<button name="4" id="c4"  onclick="addComment(this.id,'i4',this.name)" type="button" style=" border: none;cursor:pointer"><i class="fa fa-comment"></i></button> 
 					
 						</div>
 						
@@ -163,8 +158,8 @@
 						   <a href="images/sharath/6.jpg">
 							<img class="img-fluid" src="images/sharath/6.jpg" alt="" id="i5"/>
 								</a>
-						<button name="5" id="5"onclick="increaseLike(this.name)" type="button" style=" border: none;"><span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span></button>
-        					<button name="5" id="c5" onclick="addComment(this.id,'i5',this.name)" type="button" style=" border: none;"><i class="fa fa-comment"></i></button> 
+						<button name="5" id="5"onclick="increaseLike(this.name)" type="button" style=" border: none;cursor:pointer"><span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span></button>
+        					<button name="5" id="c5" onclick="addComment(this.id,'i5',this.name)" type="button" style=" border: none;cursor:pointer"><i class="fa fa-comment"></i></button> 
 						</div>
 					
 					</div>
@@ -174,11 +169,11 @@
 					<div class="single-team-member">
 						<div class="family-img">
 						<div class=" popup-gallery ">
-						   <a href="images/family-04.jpg">
+						   <a href="images/sharath/4.jpg">
 							<img class="img-fluid" src="images/sharath/4.jpg" alt="" id="i6" />
 								</a>
-						<button name="6" id="6" onclick="increaseLike(this.name)" type="button" style=" border: none;"><span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span></button>
-        					<button name="6" id="c6" onclick="addComment(this.id,'i6',this.name)" type="button" style=" border: none;"><i class="fa fa-comment"></i></button> 
+						<button name="6" id="6" onclick="increaseLike(this.name)" type="button" style=" border: none;cursor:pointer"><span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span></button>
+        					<button name="6" id="c6" onclick="addComment(this.id,'i6',this.name)" type="button" style=" border: none;cursor:pointer"><i class="fa fa-comment"></i></button> 
 						</div>
 						
 					</div>
@@ -189,11 +184,11 @@
 					<div class="single-team-member">
 						<div class="family-img">
 						<div class=" popup-gallery ">
-						   <a href="images/family-07.jpg">
+						   <a href="images/sharath/7.jpg">
 							<img class="img-fluid" src="images/sharath/7.jpg" alt="" id="i7" />
 								</a>
-						<button name="7" id="7" onclick="increaseLike(this.name)" type="button" style=" border: none;"><span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span></button>
-        					<button name="7" id="c7" onclick="addComment(this.id,'i7',this.name)" type="button" style=" border: none;"><i class="fa fa-comment"></i></button> 
+						<button name="7" id="7" onclick="increaseLike(this.name)" type="button" style=" border: none;cursor:pointer"><span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span></button>
+        					<button name="7" id="c7" onclick="addComment(this.id,'i7',this.name)" type="button" style=" border: none;cursor:pointer"><i class="fa fa-comment"></i></button> 
 						</div>
 						
 					</div>
@@ -204,11 +199,11 @@
 					<div class="single-team-member">
 						<div class="family-img">
 						<div class=" popup-gallery ">
-						   <a href="images/family-09.jpg">
+						   <a href="images/sharath/9.jpg">
 							<img class="img-fluid" src="images/sharath/9.jpg" alt="" id="i8" />
 								</a>
-						<button name="8" id="8" onclick="increaseLike(this.name)" type="button" style=" border: none;"><span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span></button>
-        					<button name="8" id="c8" onclick="addComment(this.id,'i8',this.name)" type="button" style=" border: none;"><i class="fa fa-comment"></i></button> 
+						<button name="8" id="8" onclick="increaseLike(this.name)" type="button" style=" border: none;cursor:pointer"><span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span></button>
+        					<button name="8" id="c8" onclick="addComment(this.id,'i8',this.name)" type="button" style=" border: none;cursor:pointer"><i class="fa fa-comment"></i></button> 
 						</div>
 						
 					</div>
@@ -219,7 +214,7 @@
 					<div class="single-team-member">
 						<div class="family-img">
 						<div class=" popup-gallery ">
-						   <a href="images/family-04.jpg">
+						   <a href="images/sharath/10.jpg">
 							<img class="img-fluid" src="images/sharath/10.jpg" alt="" id="i9" />
 								</a>
 						<button name="9" id="9" onclick="increaseLike(this.name)" type="button" style=" border: none;"><span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span></button>
