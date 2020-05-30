@@ -115,6 +115,7 @@ public class UserServices {
 	public List<UploadData> getwishes()throws CustomException
 	{
 		 List<UploadData> wishes=uploadRepo.findAll();
+		 System.out.println("getwishes data--"+wishes.size());	
 		 return wishes;
 	}
 	

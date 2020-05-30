@@ -149,14 +149,15 @@ let constraintObj = {
  $(document).ready(function(){
 	 $('#uploadfile').click(function(){ $('#datafile').trigger('click'); });
 	    $("#datafile").on('change',function(){
-	    	
+	    	 let vidSave = document.getElementById('vid2');
 	    	const file =document.getElementById('datafile').files[0];
 	   	    var reader=new FileReader();
 	        var base64data;
 	        reader.readAsDataURL(file);
 	        reader.onloadend=function(){
-	        	base64data=reader.result;
-	        	callAPI(base64data);
+	        base64data=reader.result;
+	        callAPI(base64data);
+	        document.getElementById("message").innerHTML="Thank you for the wishes!!"
 	     
 	    }
 	      

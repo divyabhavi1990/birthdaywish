@@ -39,7 +39,6 @@ $(document).ready(function() {
 	        processData: false,
 	        success : function (data, status) {
 	        	data.forEach(function (item) {
-	        		console.log("text--"+item.text)
 	       			var oldmsg=$('#wishtextget').html();
 	       		  $('#wishtextget').html(oldmsg+'<div class="col-lg-4 col-md-6 col-sm-12"><div class="single-team-member" style="border-color:#332d2dd9;border: 3px solid #63595c91;;"><div class="family-img" ><span><span style="color:brown;font-weight: 900;font-style: oblique;font-family: Engagement cursive;">'+item.username+': </span>'+item.text+'</span></div></div></div>');
 	       		

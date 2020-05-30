@@ -253,7 +253,7 @@ public class UserloginController {
 	@GetMapping("/getwishes/")
 	public ResponseEntity<Object> getAllWishes()
 	{
-		
+	System.out.println("getwishes data--");	
 		try
 		{
 		 List<UploadData> data=userService.getwishes();
